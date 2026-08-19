@@ -3,6 +3,7 @@ package dev.pedro.exercises;
 import java.util.Scanner;
 
 public class Question4Test {
+
     public static void main(String[] args) {
         Question4 q = new Question4();
         Scanner sc = new Scanner(System.in);

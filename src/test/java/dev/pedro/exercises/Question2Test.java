@@ -1,15 +1,16 @@
 package dev.pedro.exercises;
 
+import java.util.Scanner;
+
 public class Question2Test {
     public static void main(String[] args) {
         Question2 q = new Question2();
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int[] array = new int[n];
-        array[0] = 1;
-        array[1] = 2;
-        array[2] = 3;
-        array[3] = 4;
-        array[4] = 5;
+        for (int i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
+        }
         System.out.println("Array before DecSelectionSort:");
         System.out.print("[ ");
         for (int i = 0; i < n; i++) {
