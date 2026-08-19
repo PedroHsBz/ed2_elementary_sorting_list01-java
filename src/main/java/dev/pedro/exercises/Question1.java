@@ -2,13 +2,6 @@ package dev.pedro.exercises;
 
 public class Question1 {
 
-    public void main(String[] args) {
-        String word1 = "estrutura";
-        System.out.println(Bstring(word1));
-        String word2 = "patrocinio";
-        System.out.println(Bstring(word2));
-    }
-
     public String Bstring(String word) {
         char[] c = word.toCharArray();
         for (int i = 0; i < c.length - 1; i++) {

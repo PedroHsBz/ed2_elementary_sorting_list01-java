@@ -31,7 +31,11 @@ EdII/
 │   └── test/
 │       └── java/
 │           └── dev/pedro/exercises/
-│               └── Question1.java
+│               ├── Question1Test.java
+│               ├── Question2Test.java
+│               ├── Question3Test.java
+│               ├── Question4Test.java
+│               └── Question5Test.java
 └── README.md
 ```
 ## Pré-requisitos
@@ -66,13 +70,13 @@ Get-ChildItem -Recurse -Filter *.java src\main\java | ForEach-Object { $_.FullNa
 
 ## 📝 Exercícios
 
-| # | Arquivo | Problema | Técnica | Complexidade |
-|---|---|---|---|---|
-| 1 | `Exer01_BubbleSortString.java` | Ordenar caracteres de uma string alfabeticamente | Bubble Sort | O(n²) |
-| 2 | `Exer02_SelectionSortDesc.java` | Ordenar vetor em ordem decrescente | Selection Sort (variação) | O(n²) |
-| 3 | `Exer03_SelectionSortKSwaps.java` | Estado do vetor após k trocas do Selection Sort | Selection Sort (simulação parcial) | O(k·n) |
-| 4 | `Exer04_InsertionSortCountShifts.java` | Ordenar e contar deslocamentos no `while` | Insertion Sort (instrumentado) | O(n²) |
-| 5 | `Exer05_InsertionSortDescFromEnd.java` | Ordenar decrescente construindo do fim para o início | Insertion Sort (variação) | O(n²) |
+| # | Arquivo          | Problema | Técnica | Complexidade |
+|---|------------------|---|---|---|
+| 1 | `Question1.java` | Ordenar caracteres de uma string alfabeticamente | Bubble Sort | O(n²) |
+| 2 | `Question2.java` | Ordenar vetor em ordem decrescente | Selection Sort (variação) | O(n²) |
+| 3 | `Question3.java` | Estado do vetor após k trocas do Selection Sort | Selection Sort (simulação parcial) | O(k·n) |
+| 4 | `Question4.java` | Ordenar e contar deslocamentos no `while` | Insertion Sort (instrumentado) | O(n²) |
+| 5 | `Question5.java` | Ordenar decrescente construindo do fim para o início | Insertion Sort (variação) | O(n²) |
 
 <details>
 <summary><strong>Detalhes de cada exercício (entrada, saída e exemplo)</strong></summary>
@@ -143,25 +147,25 @@ Entrada          Saída
 Caso prefira compilar manualmente com `javac`/`java` (é necessário **JDK 8+**):
 
 ```bash
-javac -d out src/Exer01_BubbleSortString.java
-java -cp out Exer01_BubbleSortString
+javac -d out src/Question1.java
+java -cp out Question1
 ```
 
 Para compilar todos os exercícios de uma vez:
 
 ```bash
 javac -d out src/*.java
-java -cp out Exer01_BubbleSortString
-java -cp out Exer02_SelectionSortDesc
-java -cp out Exer03_SelectionSortKSwaps
-java -cp out Exer04_InsertionSortCountShifts
-java -cp out Exer05_InsertionSortDescFromEnd
+java -cp out Question1
+java -cp out Question2
+java -cp out Question3
+java -cp out Question4
+java -cp out Question5
 ```
 
 Para testar o modo juiz online via terminal, redirecione um arquivo de entrada (com o `onlineJudge()` descomentado no `main`):
 
 ```bash
-echo "estrutura" | java -cp out Exer01_BubbleSortString
+echo "estrutura" | java -cp out Question1
 ```
 
 ---
