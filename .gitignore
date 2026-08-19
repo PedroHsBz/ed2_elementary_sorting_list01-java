@@ -3,9 +3,6 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 .kotlin
-.gitignore
-ED2.iml
-README.md
 
 ### Eclipse ###
 .apt_generated
@@ -31,3 +28,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.gitignore
+.idea
+ED2.iml
