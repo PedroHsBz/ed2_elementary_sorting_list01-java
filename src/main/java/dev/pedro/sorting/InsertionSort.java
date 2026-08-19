@@ -2,7 +2,23 @@ package dev.pedro.sorting;
 
 public class InsertionSort {
 
-    public void insertionSort(int[] array) {
+    public static void main(String[] args) {
+        int[] numbers = {12, 11, 13, 5, 6};
+
+        System.out.println("Original Array:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+
+        insertionSort(numbers);
+
+        System.out.println("\nSorted Array:");
+        for (int num : numbers) {
+            System.out.print(num + " ");
+        }
+    }
+
+    public static void insertionSort(int[] array) {
         int n = array.length;
 
         for (int i = 1; i < n; i++) {

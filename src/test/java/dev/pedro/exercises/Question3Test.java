@@ -1,16 +1,17 @@
 package dev.pedro.exercises;
 
+import java.util.Scanner;
+
 public class Question3Test {
     public static void main(String[] args) {
         Question3 q = new Question3();
-        int n = 5;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k =  sc.nextInt();
         int[] array = new int[n];
-        int k = 2;
-        array[0] = 29;
-        array[1] = 64;
-        array[2] = 14;
-        array[3] = 37;
-        array[4] = 13;
+        for (int i = 0; i < n; i++) {
+            array[i] = sc.nextInt();
+        }
         StringBuilder sb = new StringBuilder();
         sb.append("[ ");
         for (int i = 0; i < n; i++) {
